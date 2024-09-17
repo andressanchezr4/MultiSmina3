@@ -14,4 +14,4 @@ python3 multi_smina3.py --smina_path /path/to/smina.static --ligand /path/to/mol
 Other smina flags may also be included.
 
 ### Disclaimer
-If after running multismina the output is an empty file, make sure the sdf file (that should contain all the ligands to be docked) is properly built. 
+If after running multismina the output is an empty file, make sure the --ligand sdf file (that should contain all the ligands to be docked) is properly built. 
