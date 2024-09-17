@@ -5,7 +5,7 @@ MultiSmina is a new wrapper script for Python 3, updated from the version found 
   
 - In order to provide feedback about the task progress, it can use the progressbar module if installed.
 
-A flag -s/--smina_path was explicitly added to specify the path of smina executable.
+A flag ```-s```/```--smina_path``` was explicitly added to specify the path of smina executable.
 
 Example of use:
 ```
@@ -13,5 +13,5 @@ python3 multi_smina3.py --smina_path /path/to/smina.static --ligand /path/to/mol
 ```
 Other smina flags may also be included.
 
-### Disclaimer
-If after running multismina the output is an empty file, make sure the --ligand sdf file (that should contain all the ligands to be docked) is properly built. 
+### Disclaimer:
+If after running multismina the output is an empty file, make sure the ```--ligand``` sdf file (that should contain all the ligands to be docked) is properly built. 
