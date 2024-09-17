@@ -436,7 +436,7 @@ def parse_args():
     outfile = args.outfile
     path2smina = args.sminapath
     cpus = int(args.cpus)
-    smina_commands = path2smina + unknown  
+    smina_commands = [path2smina] + unknown  
     
     if DEBUG > 3:
         print('command line args:')
