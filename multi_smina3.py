@@ -428,13 +428,15 @@ def parse_args():
     parser.add_argument('-l', '--ligand', dest='ligfile', required=True, help='input ligand file (.sdf or .sdf.gz)')
     parser.add_argument('-o', '--out', dest='outfile', required=True, help='output ligand file (.sdf or .sdf.gz)')
     parser.add_argument('-c', '--cpu', dest='cpus', required=False, type=int, default=mp.cpu_count(), help='Number of CPUs to use. Default: detect number in system')
+    parser.add_argument('-s', '--smina_path', dest='sminapath', required=True, type=str, help='path to smina executable')
     
     args, unknown = parser.parse_known_args()
     
     ligfile = args.ligfile
     outfile = args.outfile
+    path2smina = args.sminapath
     cpus = int(args.cpus)
-    smina_commands = ['/home/andres/Downloads/smina.static'] + unknown  # Assume smina is the command if not specified
+    smina_commands = path2smina + unknown  
     
     if DEBUG > 3:
         print('command line args:')
