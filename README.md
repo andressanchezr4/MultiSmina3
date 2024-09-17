@@ -5,7 +5,7 @@ MultiSmina is a new wrapper script for Python 3, updated from the version found 
   
 - In order to provide feedback about the task progress, it can use the progressbar module if installed.
 
-A flag -s/--smina_path was added to include the path of smina.static.
+A flag -s/--smina_path was added to specify the path of smina.static.
 
 Example of use:
 ```
