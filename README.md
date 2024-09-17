@@ -11,3 +11,4 @@ Example of use:
 ```
 python3 multi_smina3.py --smina_path /path/to/smina.static --ligand /path/to/molecules.sdf --receptor /path/to/receptor.pdbqt --autobox_ligand /path/to/ligand.pdb --out /path/to/output.sdf --scoring vinardo 
 ```
+(other smina flags can also be included) 
